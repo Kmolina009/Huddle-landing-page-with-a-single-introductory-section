@@ -127,3 +127,22 @@ footer{
     position: absolute;
     top: 40rem;
 }
+/* TODO - Make Elements fit properly */
+@media (max-width:376px) {
+    body{
+        flex-direction: column;
+        height: 63rem;
+        width: 30rem;
+        background-image: url(../images/bg-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    .huddle-logo-header{
+        position: absolute;
+        top: 3rem;
+        left: 3rem;
+        height: 2rem;
+    }
+    body > main > section.Dashboard-mockup-image > img{
+        height: 13rem;
+    }
+}
