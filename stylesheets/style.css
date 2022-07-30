@@ -86,6 +86,42 @@ color: white;
     line-height: 2.5;
     cursor: pointer;
 }
+/* TODO - Place social media Icons in correct size and positioning */
+.social-media-favicons{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 6rem;
+    left: 15rem;
+    height: 4rem;
+    width: 14rem;
+}
+.text-container > div > ion-icon{
+    height: 3rem;
+    width: 3rem;
+}
+.icon-container{
+    height: 3rem;
+    width: 3rem;
+    border: solid 2px white;
+    border-radius: 2rem;
+}
+.md{
+    position: relative;
+    top: .75rem;
+    left: .75rem;
+    color: white;
+    height: 1.5rem;   
+    width: 1.5rem;   
+}
+.md[name="logo-facebook"]{
+    position: relative;
+    top: -0.29rem;
+    left: -0.30rem;
+    color: white;
+    height: 3.5rem;
+    width: 3.5rem; 
+}
 footer{
     width: 100%;
     position: absolute;
