@@ -85,8 +85,9 @@ color: white;
     align-items: center;
     line-height: 2.5;
     cursor: pointer;
+    filter: drop-shadow(0rem .5rem 1rem #1e1336);
+
 }
-/* TODO - Place social media Icons in correct size and positioning */
 .social-media-favicons{
     display: flex;
     justify-content: space-around;
@@ -106,6 +107,7 @@ color: white;
     border: solid 2px white;
     border-radius: 2rem;
 }
+/* The icon element */
 .md{
     position: relative;
     top: .75rem;
@@ -124,7 +126,7 @@ color: white;
 }
 footer{
     width: 100%;
-    position: absolute;
+    position: relative;
     top: 40rem;
 }
 /* TODO - Make Elements fit properly */
@@ -132,17 +134,109 @@ footer{
     body{
         flex-direction: column;
         height: 63rem;
-        width: 30rem;
+        /* width: 30rem; */
         background-image: url(../images/bg-mobile.svg);
         background-repeat: no-repeat;
+        background-size: 45rem;
+        line-height: 1;
+        width: 44.6rem;
+        border: white 1px solid;
+    }
+    header{
+        position: relative;
+        top: 0rem;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 8rem;
+        left: 3rem;
+        height: 58rem;
+        width: 38rem;
+        display: flex;
     }
     .huddle-logo-header{
         position: absolute;
         top: 3rem;
         left: 3rem;
-        height: 2rem;
+        height: 3rem;
+    }
+    .Dashboard-mockup-image{
+        width: 24rem;
+        height: 23rem;
     }
     body > main > section.Dashboard-mockup-image > img{
-        height: 13rem;
+        height: 24rem;
+        left: 2rem;
+        top: 3rem;
+        position: relative;
+    }
+    .text-container{
+        display: flex;
+        position: absolute;
+        top: 30rem;
+        left: 0rem;
+        height: 24rem;
+        width: 35rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-container h1,.text-container p{
+        text-align: center;
+    }
+    .text-container h1{
+        font-size: 2rem;
+    }
+    .text-container p{
+        font-size: 1.4rem;
+        width: 29rem;
+        line-height: 2rem;
+    }
+    .text-container button{
+        flex-direction: column;
+        position: relative;
+        top: 3rem;
+        font-size: 1.2rem;
+        height: 3.7rem;
+        width: 20rem;
+        font-family: Poppins;
+        font-weight: 400;
+        color: hsl(257, 40%, 49%);
+        text-align: left;
+        border-radius: 2rem;
+        border-style: none;
+        align-items: center;
+        line-height: 3.4;
+        cursor: pointer;
+        filter: drop-shadow(0rem 1rem 1rem #1e1336);        filter: drop-shadow(0rem 1rem 1rem #1e1336);
+
+    }
+    .social-media-favicons{
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        top: 9rem;
+        left: 0rem;
+        height: 3rem;
+        width: 15rem;
+    }
+    .icon-container{
+        text-align: center;
+        line-height: 4rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    .md{
+        top: -.1rem;
+        left: -.1rem;
+    }
+    .md[name="logo-facebook"]{
+        height: 3.5rem;
+    }
+    footer{
+        display: block;
+        top: 66rem;
+        margin-bottom: .5rem;
     }
 }
